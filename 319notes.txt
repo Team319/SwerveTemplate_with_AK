@@ -1,4 +1,0 @@
-
-1. Change Team number in "AdvantageKit_SwerveDriveProject\.wpilib\wpilib_preferences.json"
-
-Note: To switch between modes, set the "mode" attribute in Constants.java to REAL, SIM (physics simulation), or REPLAY.

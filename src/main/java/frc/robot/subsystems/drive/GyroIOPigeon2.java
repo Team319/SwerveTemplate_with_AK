@@ -25,7 +25,7 @@ import edu.wpi.first.math.util.Units;
 public class GyroIOPigeon2 implements GyroIO {
   private final Pigeon2 pigeon = new Pigeon2(20);
   private final StatusSignal<Double> yaw = pigeon.getYaw();
-  private final StatusSignal<Double> yawVelocity = pigeon.getAngularVelocityZ();
+  private final StatusSignal<Double> yawVelocity = pigeon.getAngularVelocityZDevice(); // TODO : There is a device frame and a world frame, device = old implementation, but is world better here? - EKM
 
   public GyroIOPigeon2() {
     pigeon.getConfigurator().apply(new Pigeon2Configuration());
