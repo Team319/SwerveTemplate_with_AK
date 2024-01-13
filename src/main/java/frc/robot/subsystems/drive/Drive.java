@@ -70,6 +70,7 @@ public class Drive extends SubsystemBase {
         this::runVelocity,
         new HolonomicPathFollowerConfig(
             MAX_LINEAR_SPEED, DRIVE_BASE_RADIUS, new ReplanningConfig()),
+        null,  //TODO: Configure boolean supplier
         this);
     Pathfinding.setPathfinder(new LocalADStarAK());
     PathPlannerLogging.setLogActivePathCallback(
